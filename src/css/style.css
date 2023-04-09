@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--main-bg);
+  font-family: "Lexend Deca", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 70%;
+  width: 32%;
+  background-color: var(--card-bg);
+  border-radius: 3%;
+  padding: 2rem;
+}
+
+.card .img {
+  max-width: 100%;
+  border-radius: 3%;
+}
+
+.image-container:hover img {
+  transform: scale(0.9);
+}
+
+.header {
+  color: var(--white);
+  margin: 1rem 0 1rem 0;
+}
+
+.header:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.description {
+  color: var(--soft-blue);
+  margin: 0 0 1rem;
+  font-size: 1rem;
+}
+
+.valor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.valor .eth {
+  color: var(--cyan);
+}
+
+.valor .days {
+  color: var(--soft-blue);
+}
+
+.criador {
+  margin: 1rem 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding: 1rem 0 0 0;
+  font-size: 0.9rem;
+}
+
+.criador .avatar {
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+  margin-right: 2rem;
+}
+
+.criador p {
+  color: var(--white);
+}
+
+.criador .creation {
+  color: var(--soft-blue);
+}
+
+.criador .name:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
